@@ -1,13 +1,16 @@
 // declare game variables
 const holes = document.querySelectorAll('.hole');
 const marios = document.querySelectorAll('.mario');
-const score = document.querySelector('.score');
+const scoreBoard = document.querySelector('.score');
 
 // dynamically changing variables
 let sameHole;
 let timeUp = false;
 
-
+let button = document.getElementById('start');
+button.addEventListener('click', function () {
+    startTheGame();
+})
 
 /**
  * function that will give a random amount of time between pop ups
@@ -54,7 +57,26 @@ function pop() {
       }, time);
     }
 
-    let button = document.getElementById('start');
-    button.addEventListener('click', function () {
+    function startTheGame () {
+        score.textContent = 0;
+        timeUp = false;
+        timeLeft(30);
         pop();
-    })
+        setTimeout(function () {
+            timeUp = true;
+        }, 300000)
+    }
+
+    function timeLeft(seconds){
+        let countDown = setInterval(function () {
+            document.getElementById('timer').innerHTML = seconds;
+            seconds--;
+            if (seconds === -1){
+                clearInterval(countDown);
+
+            }
+        }, 1000);
+    }
+
+
+   
