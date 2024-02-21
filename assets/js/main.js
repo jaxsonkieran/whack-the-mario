@@ -21,4 +21,5 @@ function randomHole(holes){
     // get a random x from our holes 0-8 (we have 9)
     const x = Math.floor(Math.random() * holes.length);
     const hole = holes[x];
+    console.log(hole);
 }
