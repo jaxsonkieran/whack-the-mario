@@ -12,10 +12,10 @@ body {
     text-align: center;
     background: url("../images/mario-background.jpg") no-repeat center center/cover;
     min-height: 100vh;
-     /* incase background image fails to load */
-     background-color: red;
-     color: #FBD000;
-     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    /* incase background image fails to load */
+    background-color: red;
+    color: #FBD000;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
 }
 
@@ -31,20 +31,20 @@ h2 {
 
 .game-container {
     width: 600px;
-    height: 600px;
+    height: 400px;
     /* display and flex-wrap used contain the holes in .game-container */
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     /* testing */
-    border: 1px solid #FBD000;
+    /* border: 1px solid #FBD000; */
 }
 
 .hole {
     /* evenly proportion ref(https://css-tricks.com/almanac/properties/f/flex/) */
     flex: 1 0 33.33%;
     /* testing */
-    border: 1px solid #FBD000;
+    /* border: 1px solid #FBD000; */
     overflow: hidden;
     position: relative;
 
@@ -52,28 +52,27 @@ h2 {
 
 /* using the :after pseudo-element to make this div a perfect responsive square*/
 .hole:after {
-    content: "";
     display: block;
-    background: url('../images/pipe-mario.webp') bottom center no-repeat;
+    background: url("../images/pipe-mario.webp") bottom center no-repeat;
     background-size: contain;
-    position: absolute;
+    content: '';
     width: 100%;
     height: 100%;
-    /* pushes the game container to the top */
-    z-index: 300;
-    /* get the pipes aligned to the bottom of the div using border to help */
-    bottom: -60px;
+    position: absolute;
+    z-index: 2;
+    /* get the pipes just below the bottom so you don't see the mario stick out below */
+    bottom: -40px;
 }
 
 .mario {
     background: url('../images/mario-49289.png') bottom center no-repeat;
-    background-size: 50%;
+    background-size: 40%;
     position: absolute;
+    /* hide the mario from view until calling it in js */
+    top: 100%;
     width: 100%;
     height: 100%;
-/* hide the mario until it's class using js */
-    top: 100%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s;
 }
 
 .mario.up .hole {

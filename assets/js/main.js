@@ -28,7 +28,7 @@ function randomHole(holes){
     // console.log(hole);
     // To stop the mario being popped up in the same hole twice in a row. This will run the function above again and again until it gets a different hole.
     if (hole === sameHole){
-        return randHome(holes);
+        return randomHole(holes);
     }
 
     // this will save which hole got chosen the last time around
@@ -39,10 +39,12 @@ function randomHole(holes){
 /**
  * This function will get the mario to pop up in a random hole, at a random amount of time
  */
-function popUp() {
-    const time = randomTime(150, 1500)
+function pop() {
+    const time = randomTime(200, 1000)
     const hole = randomHole(holes)
     // testing
-    console.log(time, hole);
+    // console.log(time, hole);
+    // trigger the css, animating the mario back in 
+    hole.classList.add('up');
 
 }
