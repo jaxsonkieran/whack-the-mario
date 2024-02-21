@@ -18,5 +18,7 @@ function randomTime(min, max){
  */
 
 function randomHole(holes){
-    console.log(holes.length)
+    // get a random x from our holes 0-8 (we have 9)
+    const x = Math.floor(Math.random() * holes.length);
+    const hole = holes[x];
 }
