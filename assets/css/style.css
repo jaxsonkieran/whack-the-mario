@@ -71,5 +71,11 @@ h2 {
     position: absolute;
     width: 100%;
     height: 100%;
+/* hide the mario until it's class using js */
+    top: 100%;
+    transition: all 0.3s ease-in-out;
+}
 
+.mario.up .hole {
+    top: 0;
 }
