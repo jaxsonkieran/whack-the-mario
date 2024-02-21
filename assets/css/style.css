@@ -64,3 +64,7 @@ h2 {
     /* get the pipes aligned to the bottom of the div using border to help */
     bottom: -60px;
 }
+
+.mario {
+    background: url('../images/mario-49289.png') bottom center no-repeat;
+}
