@@ -40,10 +40,16 @@ h2 {
 }
 
 .hole {
+    /* evenly proportion ref(css-tricks.com) */
     flex: 1 0 33.33%;
     /* testing */
     border: 1px solid #FBD000;
     overflow: hidden;
     position: relative;
 
+}
+
+.hole:after {
+    display: block;
+    background: url();
 }
