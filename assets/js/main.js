@@ -3,6 +3,9 @@ const holes = document.querySelectorAll('.hole');
 const marios = document.querySelectorAll('.mario');
 const score = document.querySelector('.score');
 
+// dynamically changing variables
+let sameHole;
+
 
 /**
  * function that will give a random amount of time between pop ups
@@ -21,5 +24,13 @@ function randomHole(holes){
     // get a random x from our holes 0-8 (we have 9)
     const x = Math.floor(Math.random() * holes.length);
     const hole = holes[x];
-    console.log(hole);
+    // console.log(hole);
+    // To stop the mario being popped up in the same hole twice in a row. This will run the function above again and again until it gets a different hole.
+    if (hole === sameHole){
+        return randHome(holes);
+    }
+
+    // this will save which hole got chosen the last time around
+    sameHole = hole;
+    return hole;
 }
