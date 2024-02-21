@@ -5,3 +5,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    background: url("../images/mario-background.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+     /* incase background image fails to load */
+     background-color: red;
+     color: #FBD000;
+     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+}
