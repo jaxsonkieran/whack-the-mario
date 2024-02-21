@@ -56,7 +56,7 @@ h2 {
     background-size: contain;
     content: '';
     width: 100%;
-    height: 100%;
+    height: 100px;
     position: absolute;
     z-index: 2;
     /* get the pipes just below the bottom so you don't see the mario stick out below */
