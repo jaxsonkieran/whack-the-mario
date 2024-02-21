@@ -9,6 +9,6 @@ const score = document.querySelector('.score');
  */
 
 function randomTime(min, max){
-    return Math.random() * (max - min) + min;
-    
+    return Math.round(Math.random() * (max - min) + min);
+
 }
