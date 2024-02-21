@@ -1,5 +1,5 @@
 html {
-    background: url("../images/mario-background.jpg") no-repeat center center/cover;
+    /* background: url("../images/mario-background.jpg") no-repeat center center/cover; */
     min-height: 100vh;
     /* incase background image fails to load */
     background-color: red;
@@ -21,7 +21,10 @@ body {
 h1 {
     font-size: 4em;
     margin: 30px 0;
+    line-height: 1;
+    margin-bottom: 0;
 }
+
 
 h2 {
     font-size: 1.5em;
@@ -31,22 +34,15 @@ h2 {
 .game-container {
     width: 600px;
     height: 400px;
-    /* display and flex-wrap used contain the holes in .game-container */
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    /* testing */
-    /* border: 1px solid #FBD000; */
 }
 
 .hole {
-    /* evenly proportion ref(https://css-tricks.com/almanac/properties/f/flex/) */
     flex: 1 0 33.33%;
-    /* testing */
-    /* border: 1px solid #FBD000; */
     overflow: hidden;
     position: relative;
-
 }
 
 /* using the :after pseudo-element to make this div a perfect responsive square*/
@@ -56,22 +52,20 @@ h2 {
     background-size: contain;
     content: '';
     width: 100%;
-    height: 100px;
+    height:100px;
     position: absolute;
     z-index: 2;
-    /* get the pipes just below the bottom so you don't see the mario stick out below */
     bottom: -40px;
 }
 
 .mario {
-    background: url('../images/mario-49289.png') bottom center no-repeat;
+    background: url("../images/mario-49289.png") bottom center no-repeat;
     background-size: 40%;
     position: absolute;
-    /* hide the mario from view until calling it in js */
     top: 100%;
     width: 100%;
     height: 100%;
-    transition: all 0.4s;
+    transition:all 0.4s;
 }
 
 .mario.up .hole {
