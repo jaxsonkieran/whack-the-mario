@@ -57,6 +57,9 @@ function pop() {
       }, time);
     }
 
+    /**
+     * function which starts the game, sets score to zero and inputs the time remaining
+     */
     function startTheGame () {
         score.textContent = 0;
         timeUp = false;
@@ -67,6 +70,10 @@ function pop() {
         }, 300000)
     }
 
+// ref Ania Kubow (gave me inspiration for the timer)
+/**
+ * function to count down the time by 1 second
+ */
     function timeLeft(seconds){
         let countDown = setInterval(function () {
             document.getElementById('timer').innerHTML = seconds;
