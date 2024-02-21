@@ -53,3 +53,8 @@ function pop() {
         if (!timeUp) pop();
       }, time);
     }
+
+    let button = document.getElementById('start');
+    button.addEventListener('click', function () {
+        pop();
+    })
