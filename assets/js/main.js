@@ -20,6 +20,7 @@ function randomTime(min, max){
  * for a random amount of time and go back down the pipe
  */
 
+// reference function from Javascript 30/30
 function randomHole(holes){
     // get a random x from our holes 0-8 (we have 9)
     const x = Math.floor(Math.random() * holes.length);
@@ -33,4 +34,15 @@ function randomHole(holes){
     // this will save which hole got chosen the last time around
     sameHole = hole;
     return hole;
+}
+
+/**
+ * This function will get the mario to pop up in a random hole, at a random amount of time
+ */
+function popUp() {
+    const time = randomTime(150, 1500)
+    const hole = randomHole(holes)
+    // testing
+    console.log(time, hole);
+
 }
