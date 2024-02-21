@@ -10,5 +10,13 @@ const score = document.querySelector('.score');
 
 function randomTime(min, max){
     return Math.round(Math.random() * (max - min) + min);
+}
 
+/**
+ * function to get the mario to pop up randomly
+ * for a random amount of time and go back down the pipe
+ */
+
+function randomHole(holes){
+    console.log(holes.length)
 }
