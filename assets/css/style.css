@@ -1,54 +1,47 @@
 html {
-    /* background: url("../images/mario-background.jpg") no-repeat center center/cover; */
+    background: url('https://res.cloudinary.com/dhktvbrfa/image/upload/v1708539252/mario-background_ime5zw.jpg') no-repeat center center/cover;
+    box-sizing: border-box;
     min-height: 100vh;
-    /* incase background image fails to load */
-    background-color: red;
-}
-
-*, *:before, *:after {
+    font-size: 10px;
+  }
+  
+  *, *:before, *:after {
     box-sizing: inherit;
   }
-
-body {
-    font-family: 'Electrolize', sans-serif;
-    text-align: center;
-    color: #FBD000;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    padding: 0;
-    margin: 0;
-}
-
-h1 {
-    font-size: 4em;
-    margin: 30px 0;
+  
+  body {
+      font-family: 'Electrolize', sans-serif;
+      text-align: center;
+      color: #FBD000;
+      text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+      padding: 0;
+      margin: 0;
+  }
+  
+  h1 {
+    font-size: 10rem;
     line-height: 1;
     margin-bottom: 0;
-}
-
-
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
-.game-container {
+  }
+  
+  
+  .game-container {
     width: 600px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-}
-
-.hole {
+  }
+  
+  .hole {
     flex: 1 0 33.33%;
     overflow: hidden;
     position: relative;
-}
-
-/* using the :after pseudo-element to make this div a perfect responsive square*/
-.hole:after {
+  }
+  
+  .hole:after {
     display: block;
-    background: url("../images/pipe-mario.webp") bottom center no-repeat;
+    background: url("https://res.cloudinary.com/dhktvbrfa/image/upload/v1708540515/pipe-mario_hzv5ah.webp") bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
@@ -56,18 +49,18 @@ h2 {
     position: absolute;
     z-index: 2;
     bottom: -40px;
-}
-
-.mario {
-    background: url("../images/mario-49289.png") bottom center no-repeat;
+  }
+  
+  .mario {
+    background: url("https://res.cloudinary.com/dhktvbrfa/image/upload/v1708188698/mario-49289_rvghco.png") bottom center no-repeat;
     background-size: 40%;
     position: absolute;
     top: 100%;
     width: 100%;
     height: 100%;
     transition:all 0.4s;
-}
-
-.mario.up .hole {
+  }
+  
+  .hole.up .mario {
     top: 0;
-}
+  }
