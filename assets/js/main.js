@@ -7,6 +7,7 @@ const score = document.querySelector('.score');
 let sameHole;
 
 
+
 /**
  * function that will give a random amount of time between pop ups
  */

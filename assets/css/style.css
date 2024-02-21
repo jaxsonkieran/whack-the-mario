@@ -1,22 +1,21 @@
-*,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    font-family: 'Electrolize', sans-serif;
-    text-align: center;
+html {
     background: url("../images/mario-background.jpg") no-repeat center center/cover;
     min-height: 100vh;
     /* incase background image fails to load */
     background-color: red;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
     color: #FBD000;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
