@@ -67,4 +67,9 @@ h2 {
 
 .mario {
     background: url('../images/mario-49289.png') bottom center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
 }
