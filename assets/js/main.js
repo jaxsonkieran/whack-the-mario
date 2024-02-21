@@ -5,6 +5,7 @@ const score = document.querySelector('.score');
 
 // dynamically changing variables
 let sameHole;
+let timeUp = false;
 
 
 
@@ -47,5 +48,8 @@ function pop() {
     // console.log(time, hole);
     // trigger the css, animating the mario back in 
     hole.classList.add('up');
-
-}
+    setTimeout(() => {
+        hole.classList.remove('up');
+        if (!timeUp) pop();
+      }, time);
+    }
