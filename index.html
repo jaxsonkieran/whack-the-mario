@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +12,44 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Whack-A-Mario!</title>
 </head>
+
 <body>
     <!-- heading -->
     <h1>Whack-A-Mario!</h1>
-        <!-- Score and Timer -->
-        <h2 id="scoreBoard">SCORE: <span id="mariosHit">0</span></h2>    
-        <h2 id="time-left">TIME LEFT: <span id="timer">0</span></h2>     
-        <button id="start" type="button" aria-label="play the game">
-            <span id="startButtonText">Start Game</span>
-        </button>
-        <div class="game-container">
-            <div class="hole hole1">
-                <div class="mario"></div>
-            </div>
-            <div class="hole hole2">
-                <div class="mario"></div>
-            </div>
-            <div class="hole hole3">
-                <div class="mario"></div>
-            </div>
-            <div class="hole hole4">
-                <div class="mario"></div>
-            </div>
-            <div class="hole hole5">
-                <div class="mario"></div>
-            </div>
-            <div class="hole hole6">
-                <div class="mario"></div>
-            </div>
+    <!-- About Game & Start Button -->
+    <button id="start" type="button" aria-label="play the game">
+        <span id="startButtonText">Start Game</span>
+    </button>
+
+
+    <!-- Score and Timer -->
+    <div class="game-info-container">
+        <h2 id="time-left">TIME LEFT: <span id="timer">0</span></h2>
+        <h2 id="scoreBoard">SCORE: <span id="mariosHit">0</span></h2>
+    </div>
+    <div class="game-container">
+        <div class="hole hole1">
+            <div class="mario"></div>
         </div>
+        <div class="hole hole2">
+            <div class="mario"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="mario"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="mario"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="mario"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="mario"></div>
+        </div>
+    </div>
 
 
-        <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

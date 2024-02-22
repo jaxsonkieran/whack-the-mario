@@ -23,6 +23,14 @@ html {
     line-height: 1;
     margin-bottom: 0;
   }
+
+  /* scoreboard and timer container */
+  .game-info-container {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-evenly;
+    font-size: 2em;
+  }
   
   
   .game-container {
