@@ -69,6 +69,11 @@ html {
     cursor: pointer;
   }
 
+  .modal-box-content li {
+    text-align: left;
+    padding: 5px;
+  }
+
   /* scoreboard and timer container */
   .game-info-container {
     margin: 20px 0;
