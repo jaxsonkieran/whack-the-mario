@@ -21,24 +21,35 @@ html {
   h1 {
     font-size: 10rem;
     line-height: 1;
+    margin-top: 10px;
     margin-bottom: 0;
   }
 
   /* scoreboard and timer container */
   .game-info-container {
+    margin: 20px 0;
     display: flex;
     padding: 0 10px;
     justify-content: space-evenly;
     font-size: 2em;
   }
+
+  #mariosHit,
+  #timer {
+    display: block;
+  }
   
   
   .game-container {
-    width: 500px;
+    background-color: rgba(4, 156, 216,0.5);
+    border: 2px solid #FBD000;
+    border-radius: 10px;
+    width: 500px;    
     height: 450px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    flex-shrink: 0;
   }
   
   .hole {
@@ -53,7 +64,7 @@ html {
     background-size: contain;
     content: '';
     width: 100%;
-    height:100px;
+    height: 100px;
     position: absolute;
     z-index: 2;
     bottom: -40px;
@@ -63,6 +74,7 @@ html {
     background: url("https://res.cloudinary.com/dhktvbrfa/image/upload/v1708188698/mario-49289_rvghco.png") bottom center no-repeat;
     background-size: 60%;
     position: absolute;
+    bottom: 0;
     top: 100%;
     width: 100%;
     height: 100%;
@@ -76,28 +88,25 @@ html {
 
   /* +++++++++++++ MEDIA QUERIES +++++++++++++++++++ */
 
-  @media (max-width: 768px) {
+   @media (max-width: 600px) {
     h1 {
       font-size: 5em;
+      margin: 20px 30px;
     }
-    h2 {
-      font-size: 2em;
+    .game-info-container h2 {
+      margin-top: 30px;
+      font-size: 1em;
     }
     .game-container {
       width: 80%;
     }
+    .mario {
+      background-size: 70%;
+    }
     .hole {
-      height: 120px;
+      height: 200px;
     }
   }
 
-  @media (max-width: 1200px) {
-    h2 {
-      font-size: 3em;
-    }
-    #start {
-      padding: 10px;
-      font-size: 1.5em;
-    }
-  }
+
   
