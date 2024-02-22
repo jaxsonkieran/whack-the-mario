@@ -2,9 +2,9 @@
 const holes = document.querySelectorAll('.hole');
 const marios = document.querySelectorAll('.mario');
 const timerDisplay = document.getElementById('timer');
-let displayScore = document.getElementById('mariosHit');
 
 // dynamically changing variables
+let displayScore = document.getElementById('mariosHit');
 let sameHole;
 let timeUp = false;
 let score = 0;
@@ -12,6 +12,18 @@ let score = 0;
 let button = document.getElementById('start');
 button.addEventListener('click', function () {
     startTheGame();
+});
+
+/**
+ * iterate through the array of marios,
+ * add click event to increase the score
+ */
+// Add event listeners to each Mario for click events
+marios.forEach(mario => {
+    mario.addEventListener('click', () => {
+            score++; // Increase the score by 1
+            displayScore.textContent = score; // Update the score display
+    });
 });
 
 /**
@@ -59,7 +71,7 @@ function pop() {
  */
 function startTheGame () {
     displayScore.textContent = 0;
-    let score = 0;
+    score = 0;
     timeUp = false;
     timeLeft(20); // Changed to match the value used in setTimeout
     pop();
