@@ -27,6 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
         modBox.style.display = 'block';
     };
 
+    // close the modal box on click of the x
+    closeSpan.onclick = function () {
+        modBox.style.display = 'none';
+    };
+
+    // close the modal box if a user clicks anywhere outside the box
+    window.onclick = function (event) {
+        if (event.target === modBox) {
+            modBox.style.display = 'none';
+        }
+    };
 });
 
 

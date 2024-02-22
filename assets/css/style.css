@@ -68,7 +68,7 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .modal-box-content h2 {
     font-size: 4em;
      margin: 0;
@@ -80,6 +80,7 @@ html {
   .modal-box-content li {
     text-align: left;
     padding: 5px;
+    font-size: 18px;
   }
 /* The game instructions modal box ref(W3Schools for help) */
   #modalBox {
