@@ -97,6 +97,9 @@ function pop() {
  * function which starts the game, sets score to zero and inputs the time remaining
  */
 function startTheGame() {
+    document.getElementById('time-left').style.display = 'block';
+    // hide timeup message when start game is played again
+    document.getElementById('time-up').style.display = 'none'; 
     displayScore.textContent = 0;
     score = 0;
     timeUp = false;
@@ -118,6 +121,7 @@ function timeLeft(seconds) {
             clearInterval(countDown);
             document.getElementById('time-up').style.display = 'block';
             document.getElementById('time-left').style.display = 'none';
+            document.getElementById('startButtonText').innerHTML = 'Play Again';
 
         }
     }, 1000);
