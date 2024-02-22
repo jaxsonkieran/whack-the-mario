@@ -17,10 +17,31 @@
     <!-- heading -->
     <h1>Whack-A-Mario!</h1>
     <!-- About Game & Start Button -->
-    <button id="start" type="button" aria-label="play the game">
-        <span id="startButtonText">Start Game</span>
-    </button>
-
+    <div class="game-info-container">
+        <section class="game-info">
+            <!-- game info button and pop out for modal ref(W3Schools) -->
+            <button id="instructions" type="button" aria-label="click to read how to play the game">
+                Game Instructions
+            </button>
+            <div id="ModalBox" class="infoModalBox">
+                <div class="modal-box-content">
+                    <span class="close">&times;</span>
+                    <h2>How To Play!</h2>
+                    <h3>QUICK BEFORE THE MARIOS ESCAPE!</h3>
+                    <ul>
+                        <li>On desktop, use your mouse to hit the marios before they escape from the pipes!</li>
+                        <li>On mobile, tap the marios to hit them!</li>
+                        <li>You have 30 seconds to hit as many marios as you can and save the world</li>
+                        <li>Each time you get a successful hit of the mario, you will get one point!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- play game button -->
+        <button id="start" type="button" aria-label="play the game">
+            <span id="startButtonText">Start Game</span>
+        </button>
+    </div>
 
     <!-- Score and Timer -->
     <div class="game-info-container">
