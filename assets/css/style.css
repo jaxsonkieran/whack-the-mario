@@ -92,7 +92,7 @@ html {
 
   /* scoreboard and timer container */
   .game-info-container {
-    margin: 20px 0;
+    margin: 5px 0;
     display: flex;
     padding: 0 10px;
     justify-content: space-evenly;
@@ -159,8 +159,11 @@ html {
       font-size: 5em;
       margin: 20px 30px;
     }
+    button {
+      padding: 5px;
+    }
     .game-info-container h2 {
-      margin-top: 30px;
+      margin-top: 10px;
       font-size: 1em;
     }
     .game-container {
