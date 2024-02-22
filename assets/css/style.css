@@ -44,6 +44,31 @@ html {
     transition: 250ms ease-in-out;
   }
 
+  /* game instructions modal box content */
+  .modal-box-content {
+    background-color: #049cd8;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #FBD000;
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* modal box close button */
+  .close {
+    color: #ff0000;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #FBD000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   /* scoreboard and timer container */
   .game-info-container {
     margin: 20px 0;
