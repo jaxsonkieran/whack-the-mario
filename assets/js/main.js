@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // opens the instructions box when the user clicks on game instructions
     infoButton.onclick = function () {
         modBox.style.display = 'block';
-    }
+    };
 
-})
+});
 
 
 /**
