@@ -177,6 +177,13 @@ html {
     button {
       padding: 5px;
     }
+    
+    .modal-box-content h3 {
+      font-size: 1em;
+    }
+    .modal-box-content li {
+      font-size: 0.8em;
+    }
     .game-info-container h2 {
       margin-top: 10px;
       font-size: 1em;
