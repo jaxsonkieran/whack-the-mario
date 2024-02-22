@@ -74,6 +74,22 @@ html {
     padding: 5px;
   }
 
+  #modalBox {
+    /* hide the modal box */
+    display: none;
+    position: fixed;
+    /* sit on top of everything */
+    z-index: 100;
+    padding-top:100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* enable scroll */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
   /* scoreboard and timer container */
   .game-info-container {
     margin: 20px 0;
