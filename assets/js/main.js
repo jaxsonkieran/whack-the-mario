@@ -1,12 +1,13 @@
 // declare game variables
 const holes = document.querySelectorAll('.hole');
 const marios = document.querySelectorAll('.mario');
-const scoreBoard = document.querySelector('.score');
 const timerDisplay = document.getElementById('timer');
+let displayScore = document.getElementById('mariosHit');
 
 // dynamically changing variables
 let sameHole;
 let timeUp = false;
+let score = 0;
 
 let button = document.getElementById('start');
 button.addEventListener('click', function () {
@@ -57,7 +58,8 @@ function pop() {
  * function which starts the game, sets score to zero and inputs the time remaining
  */
 function startTheGame () {
-    scoreBoard.textContent = 0; // Changed to scoreBoard.textContent
+    displayScore.textContent = 0;
+    let score = 0;
     timeUp = false;
     timeLeft(20); // Changed to match the value used in setTimeout
     pop();
