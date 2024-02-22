@@ -26,8 +26,8 @@ html {
   
   
   .game-container {
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 450px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -68,10 +68,5 @@ html {
 
   /* +++++++++++++ MEDIA QUERIES +++++++++++++++++++ */
 
-  @media (min-width: 450px){
-    .game-container {
-      width: 75%;
-    }
-  }
 
   
