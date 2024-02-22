@@ -99,6 +99,12 @@ html {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  /* time up, to display when timeleft = 0 */
+  #time-up {
+    color: #ff0000;
+    display: none;
+  }
+
   /* scoreboard and timer container */
   .game-info-container {
     margin: 5px 0;

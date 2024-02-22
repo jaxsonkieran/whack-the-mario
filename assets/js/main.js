@@ -114,8 +114,11 @@ function timeLeft(seconds) {
     let countDown = setInterval(function () {
         timerDisplay.innerHTML = seconds;
         seconds--;
-        if (seconds === -1) {
+        if (seconds === 0) {
             clearInterval(countDown);
+            document.getElementById('time-up').style.display = 'block';
+            document.getElementById('time-left').style.display = 'none';
+
         }
     }, 1000);
 }
