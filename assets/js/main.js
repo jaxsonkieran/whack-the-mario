@@ -50,12 +50,15 @@ function pop() {
     // testing
     // console.log(time, hole);
     // trigger the css, animating the mario back in 
-    hole.classList.add('up');
-    setTimeout(() => {
-        hole.classList.remove('up');
-        if (!timeUp) pop();
-      }, time);
+    if (!timeUp) {
+        hole.classList.add('up');
+        setTimeout(() => {
+            hole.classList.remove('up');
+            if (!timeUp) pop();
+          }, time);
     }
+}
+
 
     /**
      * function which starts the game, sets score to zero and inputs the time remaining
@@ -63,14 +66,13 @@ function pop() {
     function startTheGame () {
         score.textContent = 0;
         timeUp = false;
-        timeLeft(30);
+        timeLeft(20);
         pop();
         setTimeout(function () {
             timeUp = true;
-        }, 300000)
+        }, 20000);
     }
 
-// ref Ania Kubow (gave me inspiration for the timer)
 /**
  * function to count down the time by 1 second
  */
