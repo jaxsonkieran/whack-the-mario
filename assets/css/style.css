@@ -68,6 +68,14 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
+  
+  .modal-box-content h2 {
+    font-size: 4em;
+     margin: 0;
+    }
+    .modal-box-content h3 {
+    font-size: 2.5em;
+    }
 
   .modal-box-content li {
     text-align: left;
