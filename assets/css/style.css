@@ -73,7 +73,7 @@ html {
     text-align: left;
     padding: 5px;
   }
-
+/* The game instructions modal box ref(W3Schools for help) */
   #modalBox {
     /* hide the modal box */
     display: none;
