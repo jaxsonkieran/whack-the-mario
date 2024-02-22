@@ -25,6 +25,25 @@ html {
     margin-bottom: 0;
   }
 
+  .game-info{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* game instructions & start buttons */
+  .game-info-container button {
+    background-color: #049cd8;
+    color: #FBD000;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .game-info-container button:hover {
+    background-color: #FBD000;
+    color: #049cd8;
+    transition: 250ms ease-in-out;
+  }
+
   /* scoreboard and timer container */
   .game-info-container {
     margin: 20px 0;
@@ -34,6 +53,7 @@ html {
     font-size: 2em;
   }
 
+
   #mariosHit,
   #timer {
     display: block;
@@ -41,7 +61,7 @@ html {
   
   
   .game-container {
-    background-color: rgba(4, 156, 216,0.5);
+    background-color: rgba(4, 156, 216, 0.5);
     border: 2px solid #FBD000;
     border-radius: 10px;
     width: 500px;    
