@@ -64,3 +64,14 @@ html {
   .hole.up .mario {
     top: 0;
   }
+
+
+  /* +++++++++++++ MEDIA QUERIES +++++++++++++++++++ */
+
+  @media (min-width: 450px){
+    .game-container {
+      width: 75%;
+    }
+  }
+
+  
