@@ -1,5 +1,5 @@
 html {
-    background: url('../images/mario-background.jpg') no-repeat center center/cover;
+    background: url('../images/mario-background.webp') no-repeat center center/cover;
     box-sizing: border-box;
     min-height: 100vh;
     font-size: 10px;
@@ -151,7 +151,7 @@ html {
   }
   
   .mario {
-    background: url("../images/mario-49289.png") bottom center no-repeat;
+    background: url("../images/mario-49289.webp") bottom center no-repeat;
     background-size: 60%;
     position: absolute;
     bottom: 0;
