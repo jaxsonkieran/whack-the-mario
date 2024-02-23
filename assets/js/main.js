@@ -40,10 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 
-// set cursor to hammer 
-const hammerArea = document.getElementsByClassName('game-container');
-hammerArea.style.cursor = 'url("assets/images/hammer.png"), auto';
-
 
 /**
  * iterate through the array of marios,
