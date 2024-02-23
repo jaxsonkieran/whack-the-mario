@@ -1,5 +1,5 @@
 html {
-    background: url('https://res.cloudinary.com/dhktvbrfa/image/upload/v1708539252/mario-background_ime5zw.jpg') no-repeat center center/cover;
+    background: url('../images/mario-background.jpg') no-repeat center center/cover;
     box-sizing: border-box;
     min-height: 100vh;
     font-size: 10px;
@@ -140,7 +140,7 @@ html {
   
   .hole:after {
     display: block;
-    background: url("https://res.cloudinary.com/dhktvbrfa/image/upload/v1708540515/pipe-mario_hzv5ah.webp") bottom center no-repeat;
+    background: url("../images/pipe-mario.webp") bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
@@ -151,7 +151,7 @@ html {
   }
   
   .mario {
-    background: url("https://res.cloudinary.com/dhktvbrfa/image/upload/v1708188698/mario-49289_rvghco.png") bottom center no-repeat;
+    background: url("../images/mario-49289.png") bottom center no-repeat;
     background-size: 60%;
     position: absolute;
     bottom: 0;
