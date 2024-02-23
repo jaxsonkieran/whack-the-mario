@@ -14,34 +14,33 @@ let timeUp = false;
 let score = 0;
 
 // add event listeners DOM load before running game, means the code will be executed once fully loaded
+// Add event listeners DOM load before running game, means the code will be executed once fully loaded
 document.addEventListener('DOMContentLoaded', function () {
 
     let button = document.getElementById('start');
-    button.addEventListener('click', function () {
-        startTheGame();
-    });
+    button.addEventListener('click', startTheGame);
 
-    // declare game instructions variables
+    // Declare game instructions variables
     const modBox = document.getElementById('modalBox');
     const infoButton = document.getElementById('instructions');
     const closeSpan = document.getElementsByClassName('close')[0];
     
     // opens the instructions box when the user clicks on game instructions
-    infoButton.onclick = function () {
+    infoButton.addEventListener('click', function () {
         modBox.style.display = 'block';
-    };
+    });
 
     // close the modal box on click of the x
-    closeSpan.onclick = function () {
+    closeSpan.addEventListener('click', function () {
         modBox.style.display = 'none';
-    };
+    });
 
     // close the modal box if a user clicks anywhere outside the box
-    window.onclick = function (event) {
+    window.addEventListener('click', function (event) {
         if (event.target === modBox) {
             modBox.style.display = 'none';
         }
-    };
+    });
 });
 
 
