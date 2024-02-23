@@ -3,6 +3,10 @@ const holes = document.querySelectorAll('.hole');
 const marios = document.querySelectorAll('.mario');
 const timerDisplay = document.getElementById('timer');
 
+// Declare constants for timeout duration and countdown interval
+const TIMEOUT_DURATION_MS = 20000; // 20 seconds
+const COUNTDOWN_INTERVAL_MS = 1000; // 1 second
+
 // dynamically changing variables
 let displayScore = document.getElementById('mariosHit');
 let sameHole;
@@ -103,7 +107,7 @@ function startTheGame() {
     displayScore.textContent = 0;
     score = 0;
     timeUp = false;
-    timeLeft(20); // Changed to match the value used in setTimeout
+    timeLeft(TIMEOUT_DURATION_MS / 1000); // Convert milliseconds to seconds
     pop();
     setTimeout(function () {
         timeUp = true;
@@ -124,5 +128,5 @@ function timeLeft(seconds) {
             document.getElementById('startButtonText').innerHTML = 'Play Again';
 
         }
-    }, 1000);
+    }, COUNTDOWN_INTERVAL_MS);
 }
