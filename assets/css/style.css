@@ -165,6 +165,31 @@ html {
     top: 0;
   }
 
+  .popup {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FBD000;
+    border: 2px solid #ff0000;
+    padding: 20px;
+    text-align: center;
+    z-index: 99999;
+  }
+
+  .popup p {
+    font-size: 26px;
+  }
+
+  .popup button {
+    background-color: #049cd8;
+    color: #FBD000;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
 
   /* +++++++++++++ MEDIA QUERIES +++++++++++++++++++ */
 
