@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // set cursor to hammer 
-const hammerArea = document.getElementById('game-container');
+const hammerArea = document.getElementsByClassName('game-container');
 hammerArea.style.cursor = 'url("https://res.cloudinary.com/dhktvbrfa/image/upload/v1708646179/super-mario-hammer_p2vyda.png"), auto';
 
 
