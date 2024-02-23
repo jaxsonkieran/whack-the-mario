@@ -27,12 +27,21 @@ Whack-a-Mario is a game designed to give the user a fun, intuitive and interesti
 * Sounds responsive to actions (if they hit a mario)
 
 ### User Stories
-* Having instructions available on how to play the game
-* To see the current score
-* To see the time left
-* To play on different devices
-* Design and Visually appealing
-* Game Audio
+#### As a first time visitor I want to quickly understand where to find the rules
+#### As a first time visitor I want to know where to start the game
+* As soon as teh page is loaded the user can easily see the button 'Start Game'
+* When hovering above the button it changes background-color to indicate the user can click on it
+#### As a first time visitor I want to see what my score is and how much time I have left
+* Above the game container the user can see their score and the time they have left.
+* The information is updated in real time so the user always sees how they are doing, with score and time left
+#### As a returning visitor I want to be able to quickly restart the game when it's over
+* There is a pop up that will display the score the user achieved on game over and a button to play again
+#### As creator I want to provide the users with a game that is simple to navigate
+* When the website loads the users are clearly presented with the name of the game, a game-info area, a game-area and a control-area.
+* When hovering above buttons the background color changes to indicate even further that the user can click on them
+#### As a administrator I want to provide a design and feedback that is fun and engages with the user
+* The game is designed to be "cartoonish" so the user clearly can see that it is a game and not made to be realistic.
+* When the game is ended the user are presented with their score and an opportunity to play again
 
 ### Design
 #### Colors
@@ -79,7 +88,7 @@ This project was built using HTML, CSS and Javascript.
 * This will launch the game into action.
 * The button is deactivated during in-game play and reactivated once finished.
 4. Timer
-* The timer is displayed as Time Left:, it will count down from 60 seconds. 
+* The timer is displayed as Time Left:, it will count down from 30 seconds. 
 5. Scoreboard
 * The score is displayed at the top of the game area. 
 * Successful hits of the super marios will move the score up 1 point. At the end of the game, you will see your final score.
@@ -87,8 +96,17 @@ This project was built using HTML, CSS and Javascript.
 # Features to Add
 * I would really like to add levels to this game, increase the difficulty and make it more difficult for the user as they progress.
 * It would also be cool to add a changing game container if the user passed a certain level, like if they hit over 20 marios, the game would change and they would need to hit moles, or pokemons, something to keep the user more engaged!
+* I would also like to add a scoreboard, created with highscores fromd different players
+
+
 
 # Testing
+### Automated Testing
+
+# Bugs
+* One of the more major bugs I encountered when making this project was trying to change the cursor to a hammer, or mallet when the user brought their mouse over the game container. I tried creating it in JS, CSS, etc. to no avail.
+* I had a lot of trouble with getting the mario to slide up and appear behind the pipe. I had to resort to cropping the bottom of the green pipe altogether and making it look like it was in the ground so it looked like the mario was jumping up out of it. I think it still looks ok in the end. 
+
 
 # Deployment
 This project was developed using [Gidpod](https://gitpod.io/), and pushed to [GitHub](https://github.com/).
