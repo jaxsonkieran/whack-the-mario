@@ -92,6 +92,7 @@ This project was built using HTML, CSS and Javascript.
 5. Scoreboard
 * The score is displayed at the top of the game area. 
 * Successful hits of the super marios will move the score up 1 point. At the end of the game, you will see your final score.
+* There is a game over popup when the time runs out, the popup will appear to tell the user the game is over and their score. It will also present a play again button. 
 
 # Features to Add
 * I would really like to add levels to this game, increase the difficulty and make it more difficult for the user as they progress.
