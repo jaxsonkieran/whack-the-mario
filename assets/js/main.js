@@ -114,7 +114,10 @@ function startTheGame() {
     setTimeout(function () {
         // Enable the start button
         document.getElementById('start').disabled = false;
+        // set timeup to true after game duration
         timeUp = true;
+        // call the function to display the game over pop up
+        displayGameOverPopup();
     }, 20000); // Changed to milliseconds (20 seconds)
 }
 
@@ -133,4 +136,31 @@ function timeLeft(seconds) {
 
         }
     }, COUNTDOWN_INTERVAL_MS);
+}
+
+/**
+ * function to display a game over function with the users score and button to play again
+ */
+// ref help with Web Developer course on Udemy
+function displayGameOverPopup () {
+    // create the popup element
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+
+    // create a message to display game over and the final score and a button to play again
+    const message = document.createElement('p');
+    message.textContent = `Game Over! Your Score is ${score}`;
+    popup.appendChild(message);
+
+    // create a button to play again
+    const playAgainButton = document.createElement('button');
+    playAgainButton.textContent = 'Play Again';
+    playAgainButton.addEventListener('click', function () {
+        // restart the game when clicked
+        popup.style.display = 'none';
+        startTheGame();
+    });
+    popup.appendChild(playAgainButton);
+    // append the popup to doc body
+    document.body.appendChild(popup);
 }
