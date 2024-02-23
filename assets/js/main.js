@@ -14,7 +14,7 @@ let timeUp = false;
 let score = 0;
 
 // add event listeners DOM load before running game, means the code will be executed once fully loaded
-// Add event listeners DOM load before running game, means the code will be executed once fully loaded
+
 document.addEventListener('DOMContentLoaded', function () {
 
     let button = document.getElementById('start');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modBox = document.getElementById('modalBox');
     const infoButton = document.getElementById('instructions');
     const closeSpan = document.getElementsByClassName('close')[0];
-    
+
     // opens the instructions box when the user clicks on game instructions
     infoButton.addEventListener('click', function () {
         modBox.style.display = 'block';
@@ -91,7 +91,8 @@ function pop() {
         hole.classList.add('up');
         setTimeout(() => {
             hole.classList.remove('up');
-            if (!timeUp) pop();
+            if (!timeUp)
+                pop();
         }, time);
     }
 }
@@ -100,15 +101,19 @@ function pop() {
  * function which starts the game, sets score to zero and inputs the time remaining
  */
 function startTheGame() {
+    // Disable the start button
+    document.getElementById('start').disabled = true;
     document.getElementById('time-left').style.display = 'block';
     // hide timeup message when start game is played again
-    document.getElementById('time-up').style.display = 'none'; 
+    document.getElementById('time-up').style.display = 'none';
     displayScore.textContent = 0;
     score = 0;
     timeUp = false;
     timeLeft(TIMEOUT_DURATION_MS / 1000); // Convert milliseconds to seconds
     pop();
     setTimeout(function () {
+        // Enable the start button
+        document.getElementById('start').disabled = false;
         timeUp = true;
     }, 20000); // Changed to milliseconds (20 seconds)
 }
