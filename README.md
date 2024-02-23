@@ -1,110 +1,117 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Whack-a-Mario
+View the live site here
 
-Welcome Kieran Jackson,
+# Table of Contents
+1. [UX](#ux)
+    * [Project Goals](#project-goals)
+    * [User Goals](#user-goals)
+    * [User Stories](#user-stories)
+    * [Design](#design)
+    * [Wireframes](#wireframes)
+2. [Technologies Used](#technologies-used)
+3. [Features](#features)
+4. Testing
+5. Deployment
+6. Credits
+    * Content
+    * Media (Images)
+    * Code
+    * Acknowledgements
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# UX
+### Project Goals
+Whack-a-Mario is a game designed to give the user a fun, intuitive and interesting game where the time the mario pops up is completely random!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### User Goals
+* Easy to understand and play as soon as the user lands on the game site
+* Sounds responsive to actions (if they hit a mario)
 
-## Gitpod Reminders
+### User Stories
+* Having instructions available on how to play the game
+* To see the current score
+* To see the time left
+* To play on different devices
+* Design and Visually appealing
+* Game Audio
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Design
+#### Colors
+Based on mario, so I've chosen a mario color pallete from [Pinterest](https://www.pinterest.ie/pin/644366659198278801/). 
 
-`python3 -m http.server`
+<img src='documentation/readme-images/color-scheme.jpg'>
 
-A blue button should appear to click: _Make Public_,
+#### Font
+* The font used in the project is Electrolize from [Google Fonts](https://www.fonts.google.com). It was chosen because of it's retro/game look and feel.
 
-Another blue button should appear to click: _Open Browser_.
+#### Background Image
+* The background image was taken from a free wallpaper download of [Mario Images](https://mrwallpaper.com/wallpapers/download-mario-wallpaper-nggsnupoh0ha4car.html)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+#### Audio
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+#### Wireframes
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# Technologies Used
+This project was built using HTML, CSS and Javascript.
 
-------
+* Google Fonts
+    * Used to style the text
+* Gitpod 
+    * Gitpod was used by the developer to build the game.
+* GitHub
+    * GitHub was used to store project code.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Features
+* There will be two buttons located at the top of the page, an About and Play Game.
+1. As this game was designed to be on one page it was decided to use an About Button for the user to interact with if they need to understand how to play the game.
+2. About Modal Box
+* On click, the modal box opens with instructions on how to play. The background darkened to cover the game area. 
+* This includes a hover state to let the user know they are hovering over it and it can be pressed.
+* The instructions are fun, small and easy to understand. 
+* The X to close the modal box changes colour on hover and located on the top right of the box.
+3. Play Game Button
+* This button is also located at the top of the page, alongside the about button.
+* This includes a hover state to let the user know they are hovering over it and it can be pressed.
+* This will launch the game into action.
+* The button is deactivated during in-game play and reactivated once finished.
+4. Timer
+* The timer is displayed as Time Left:, it will count down from 60 seconds. 
+5. Scoreboard
+* The score is displayed at the top of the game area. 
+* Successful hits of the super marios will move the score up 1 point. At the end of the game, you will see your final score.
 
-**September 20 2023:** Update Python version to 3.9.17.
+# Features to Add
+* I would really like to add levels to this game, increase the difficulty and make it more difficult for the user as they progress.
+* It would also be cool to add a changing game container if the user passed a certain level, like if they hit over 20 marios, the game would change and they would need to hit moles, or pokemons, something to keep the user more engaged!
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# Testing
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# Deployment
+This project was developed using [Gidpod](https://gitpod.io/), and pushed to [GitHub](https://github.com/).
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+To deploy Whack-A-Mario to GitHub Pages from its [repo](https://github.com/jaxsonkieran/whack-the-mario.git) these are the steps to take.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+1. Log in to GitHub.
+2. From the list of repos choose **jaxsonkieran/whack-the-mario**
+3. Near the top of the page there will be the menu items, click on **Settings**
+4. On the left side of the screen there is another list of items.
+5. Scroll down to the second last item which will be **Pages** and select it.
+6. Under **Source** click the dropdown menu and select **Master**
+7. Once selected the link will appear in a matter of seconds to the live site.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### How to run this project locally
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+To clone this project:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+1. Click this link to the [Whack-a-Mario](https://github.com/jaxsonkieran/whack-the-mario.git) repo.
+2. Under the menu items, there is a green button labelled **Code**.
+3. Click the **Code** button and under the **Clone** option select the **HTTPS** tab.
+4. Copy the clone URL for the repo.
+5. In Your IDE open Git
+6. Change the current directory to the location you want to clone this repo.
+7. Type **git clone** followed by the copied URL.
+8. Press Enter and your clone will be created.
