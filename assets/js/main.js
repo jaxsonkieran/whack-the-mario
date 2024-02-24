@@ -163,4 +163,15 @@ function displayGameOverPopup () {
     popup.appendChild(playAgainButton);
     // append the popup to doc body
     document.body.appendChild(popup);
+
+    // Close the popup when clicking outside of it
+    document.body.addEventListener('click', closePopup);
+
+    function closePopup(event){
+        if(!popup.contains(event.target)) {
+            popup.style.display = 'none';
+            // remove the event listener
+            document.body.removeEventListener('click', closePopup);
+        }
+    }
 }
