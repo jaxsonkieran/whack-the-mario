@@ -53,6 +53,11 @@ marios.forEach(mario => {
     mario.addEventListener('click', () => {
         score++; // Increase the score by 1
         displayScore.textContent = score; // Update the score display
+
+        // play the whack sound
+        const whackSound = document.getElementById('whack-sound');
+        whackSound.currentTime = 0;
+        whackSound.play();
     });
 });
 
