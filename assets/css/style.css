@@ -215,6 +215,12 @@ html {
   /* +++++++++++++ MEDIA QUERIES +++++++++++++++++++ */
 
    @media (max-width: 600px) {
+    html {
+      background: url('../images/mario-phone-bg.webp') no-repeat center/cover;
+      box-sizing: border-box;
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+      min-height: 100vh; /* Ensure minimum height of viewport */
+    }
     h1 {
       font-size: 5em;
       margin: 20px 30px;
