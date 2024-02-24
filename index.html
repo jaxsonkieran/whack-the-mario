@@ -18,15 +18,16 @@
     <header>
     <h1>Whack-A-Mario!</h1>
 </header>
-
+    <!-- Main content area -->
 <main>
-    <!-- About Game & Start Button -->
+        <!-- About Game & Start Button section -->
     <div class="game-info-container">
         <section class="game-info">
             <!-- game info button and pop out for modal ref(W3Schools) -->
             <button id="instructions" type="button" aria-label="click to read how to play the game">
                 Game Instructions
             </button>
+            <!-- Modal box for game instructions -->
             <div id="modal-box" class="info-modal-box">
                 <div class="modal-box-content">
                     <span class="close">&times;</span>
@@ -41,18 +42,19 @@
                 </div>
             </div>
         </section>
-        <!-- play game button -->
+        <!-- start game button -->
         <button id="start" type="button" aria-label="play the game">
             <span id="startButtonText">Start Game</span>
         </button>
     </div>
 
-    <!-- Score and Timer -->
+    <!-- Score and Timer section -->
     <div class="game-info-container">
         <h2 id="time-left">TIME LEFT: <span id="timer">0</span></h2>
         <h2 id="time-up">TIME UP!!!!</h2>
         <h2 id="score-board">SCORE: <span id="marios-hit">0</span></h2>
     </div>
+    <!-- game container section -->
     <div class="game-container">
         <div class="hole hole1">
             <div class="mario"></div>
@@ -74,9 +76,10 @@
         </div>
     </div>
 </main>
-
+<!-- audio element for whack sound -->
 <audio id="whack-sound" src="assets/sounds/whack.mp3" preload="auto"></audio>
-    <script src="assets/js/main.js"></script>
+<!-- script for game functionality -->
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
