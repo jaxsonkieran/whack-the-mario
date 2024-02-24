@@ -157,6 +157,16 @@ function displayGameOverPopup () {
     const popup = document.createElement('div');
     popup.classList.add('popup');
 
+    // create a close "x" button in the corner
+    const closeGameOverButton = document.createElement('button');
+    closeGameOverButton.textContent = 'X';
+    closeGameOverButton.classList.add('close-game-over-button');
+    closeGameOverButton.addEventListener('click', function () {
+        // close popup when clicked
+        popup.style.display = 'none';
+    });
+    popup.appendChild(closeGameOverButton);
+
     // create a message to display game over and the final score and a button to play again
     const message = document.createElement('p');
     message.textContent = `Game Over! Your Score is ${score}`;
@@ -173,15 +183,4 @@ function displayGameOverPopup () {
     popup.appendChild(playAgainButton);
     // append the popup to doc body
     document.body.appendChild(popup);
-
-    // Close the popup when clicking outside of it
-    document.body.addEventListener('click', closePopup);
-
-    function closePopup(event){
-        if(!popup.contains(event.target)) {
-            popup.style.display = 'none';
-            // remove the event listener
-            document.body.removeEventListener('click', closePopup);
-        }
-    }
 }

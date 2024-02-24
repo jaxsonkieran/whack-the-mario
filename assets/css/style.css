@@ -207,6 +207,18 @@ html {
     padding: 10px;
   }
 
+  .close-game-over-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #049cd8;
+    border: none;
+    outline: none;
+    color:#ff0000;
+  }
+
   .popup button:hover {
     background-color: #43b047;
   }
