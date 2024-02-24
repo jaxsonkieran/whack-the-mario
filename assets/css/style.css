@@ -105,6 +105,7 @@ html {
 
   /* styles time up, to display when timeleft = 0 */
   #time-up {
+    font-size: 1em;
     color: #ff0000;
     display: none;
   }
@@ -181,7 +182,7 @@ html {
 
   .popup {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     width: 50%;
     height: 50%;
