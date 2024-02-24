@@ -1,14 +1,15 @@
+/* set background image for the entire HTML document */
 html {
-    background: url('../images/mario-background.webp') no-repeat center center/cover;
-    box-sizing: border-box;
-    min-height: 100vh;
-    font-size: 10px;
-  }
-  
+  background: url('../images/mario-background.webp') no-repeat center center/cover;
+  box-sizing: border-box;
+  min-height: 100vh; /* Ensure minimum height of viewport */
+  font-size: 10px; /* Establish base font size for rem units */
+}
+  /* Inherit box-sizing for all elements and pseudo-elements */
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+  /* General styles for the body */
   body {
       font-family: 'Electrolize', sans-serif;
       text-align: center;
@@ -17,14 +18,14 @@ html {
       padding: 0;
       margin: 0;
   }
-  
+  /* Styles for main heading */
   h1 {
     font-size: 10rem;
     line-height: 1;
     margin-top: 10px;
     margin-bottom: 0;
   }
-
+/* Container for game instructions */
   .game-info{
     display: flex;
     justify-content: space-evenly;
@@ -37,14 +38,13 @@ html {
     border-radius: 8px;
     padding: 10px;
   }
-
+/* Hover styles for buttons */
   .game-info-container button:hover {
     background-color: #FBD000;
     color: #049cd8;
     transition: 250ms ease-in-out;
   }
-
-  /* game instructions modal box content */
+/* Styles for modal box content */
   .modal-box-content {
     background-color: #049cd8;
     margin: auto;
@@ -54,21 +54,23 @@ html {
     width: 80%;
   }
 
-  /* modal box close button */
-  .close {
+/* Close button styles for modal box */  
+.close {
     color: #ff0000;
     float: right;
     font-size: 20px;
     font-weight: bold;
   }
 
-  .close:hover,
-  .close:focus {
-    color: #FBD000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* Hover and focus styles for close button */
+.close:hover,
+.close:focus {
+    color: #FBD000; /* Change color on hover/focus */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer */
+}
 
+/* Styles for headings within modal box content */
   .modal-box-content h2 {
     font-size: 4em;
      margin: 0;
@@ -76,14 +78,15 @@ html {
     .modal-box-content h3 {
     font-size: 2.5em;
     }
+/* Styles for list items within modal box content */
 
   .modal-box-content li {
     text-align: left;
     padding: 5px;
     font-size: 18px;
   }
-/* The game instructions modal box ref(W3Schools for help) */
-  #modal-box {
+/* Styles for the modal box, W3schools really helped with learning to build a modal */
+#modal-box {
     /* hide the modal box */
     display: none;
     position: fixed;
@@ -99,14 +102,14 @@ html {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  /* time up, to display when timeleft = 0 */
+  /* styles time up, to display when timeleft = 0 */
   #time-up {
     color: #ff0000;
     display: none;
   }
 
-  /* scoreboard and timer container */
-  .game-info-container {
+/* Styles for scoreboard and timer container */
+.game-info-container {
     margin: 5px 0;
     display: flex;
     padding: 0 10px;
@@ -119,7 +122,8 @@ html {
   #timer {
     display: block;
   }
-  
+
+  /* Styles for game container */
   .game-container {
     background-color: rgba(4, 156, 216, 0.5);
     border: 2px solid #FBD000;
@@ -132,14 +136,16 @@ html {
     flex-shrink: 0;
   }
   
-  .hole {
-    flex: 1 0 33.33%;
-    overflow: hidden;
-    position: relative;
-  }
-  
+ /* Styles for individual holes */
+.hole {
+  flex: 1 0 33.33%; /* Use flexbox for equal-width columns */
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Set position to relative */
+}
+  /* Styles for elements after each hole */
+
   .hole:after {
-    display: block;
+    display: block; 
     background: url("../images/pipe-mario.webp") bottom center no-repeat;
     background-size: contain;
     content: '';
@@ -149,7 +155,9 @@ html {
     z-index: 2;
     bottom: -40px;
   }
-  
+
+  /* Styles for Mario character */
+
   .mario {
     background: url("../images/mario-49289.webp") bottom center no-repeat;
     background-size: 60%;
@@ -160,7 +168,8 @@ html {
     height: 100%;
     transition:all 0.4s;
   }
-  
+  /* Styles for Mario when hole is 'up' */
+
   .hole.up .mario {
     top: 0;
   }
