@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', startTheGame);
 
     // Declare game instructions variables
-    const modBox = document.getElementById('modalBox');
+    const modBox = document.getElementById('modal-box');
     const infoButton = document.getElementById('instructions');
     const closeSpan = document.getElementsByClassName('close')[0];
 

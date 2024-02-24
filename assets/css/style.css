@@ -83,7 +83,7 @@ html {
     font-size: 18px;
   }
 /* The game instructions modal box ref(W3Schools for help) */
-  #modalBox {
+  #modal-box {
     /* hide the modal box */
     display: none;
     position: fixed;
