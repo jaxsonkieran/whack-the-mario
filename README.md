@@ -137,6 +137,22 @@ This project was built using HTML, CSS and Javascript.
 * I had a lot of trouble with getting the mario to slide up and appear behind the pipe. I had to resort to cropping the bottom of the green pipe altogether and making it look like it was in the ground so it looked like the mario was jumping up out of it. I think it still looks ok in the end. 
 * Another bug that popped up while testing, I added a window.click event listener to the game over popup but it meant people were clicking out of it before they saw the final score. This meant I had to remove this part in the javascript code and update it to create a close button element instead which worked out better in the end. 
 
+# Validator Testing
+* Before testing, code was checked and formatted by right clicking an choosing - format document.
+
+* The [W3C](https://validator.w3.org/nu/#textarea) site was used to validate the HTML code. 
+It returned no errors as shown below. 
+<img src="documentation/readme-images/html-checker.JPG">
+
+* The [W3C](https://jigsaw.w3.org/css-validator/validator) was also used to validate the CSS code. It returned no errors also.
+<img src="documentation/readme-images/css-checker.JPG">
+
+* [JSHINT](https://jshint.com/) was used to validate the JavaScript code. It returned no erros. Shown below.
+<img src="documentation/readme-images/jshint-checker.JPG">
+
+* Lighthouse was used to check the site performance, accessibility, best practice and SEO. 
+<img src="documentation/readme-images/lighthouse-checker.JPG">
+
 
 # Deployment
 This project was developed using [Gidpod](https://gitpod.io/), and pushed to [GitHub](https://github.com/).
