@@ -7,6 +7,11 @@ const timerDisplay = document.getElementById('timer');
 const TIMEOUT_DURATION_MS = 20000; // 20 seconds
 const COUNTDOWN_INTERVAL_MS = 1000; // 1 second
 
+// Declare other constants
+const MIN_POPUP_TIME_MS = 200;
+const MAX_POPUP_TIME_MS = 1000;
+const GAME_DURATION_MS = 20000; // 20 seconds
+
 // dynamically changing variables
 let displayScore = document.getElementById('marios-hit');
 let sameHole;
@@ -90,7 +95,7 @@ function randomHole(holes) {
  * This function will get the mario to pop up in a random hole, at a random amount of time
  */
 function pop() {
-    const time = randomTime(200, 1000);
+    const time = randomTime(MIN_POPUP_TIME_MS, MAX_POPUP_TIME_MS);
     const hole = randomHole(holes);
     if (!timeUp) {
         hole.classList.add('up');
@@ -123,7 +128,7 @@ function startTheGame() {
         timeUp = true;
         // call the function to display the game over pop up
         displayGameOverPopup();
-    }, 20000); // Changed to milliseconds (20 seconds)
+    }, GAME_DURATION_MS); // Changed to milliseconds (20 seconds)
 }
 
 /**

@@ -16,70 +16,70 @@
 <body>
     <!-- heading -->
     <header>
-    <h1>Whack-A-Mario!</h1>
-</header>
+        <h1>Whack-A-Mario!</h1>
+    </header>
     <!-- Main content area -->
-<main>
+    <main>
         <!-- About Game & Start Button section -->
-    <div class="game-info-container">
-        <section class="game-info">
-            <!-- game info button and pop out for modal ref(W3Schools) -->
-            <button id="instructions" type="button" aria-label="click to read how to play the game">
-                Game Instructions
-            </button>
-            <!-- Modal box for game instructions -->
-            <div id="modal-box" class="info-modal-box">
-                <div class="modal-box-content">
-                    <span class="close">&times;</span>
-                    <h2>How To Play!</h2>
-                    <h3>QUICK BEFORE THE MARIOS ESCAPE!</h3>
-                    <ul>
-                        <li>On desktop, use your mouse to hit the marios before they escape from the pipes!</li>
-                        <li>On mobile, tap the marios to hit them!</li>
-                        <li>You have 30 seconds to hit as many marios as you can and save the world</li>
-                        <li>Each time you get a successful hit of the mario, you will get one point!</li>
-                    </ul>
+        <div class="game-info-container">
+            <section class="game-info">
+                <!-- game info button and pop out for modal ref(W3Schools) -->
+                <button id="instructions" type="button" aria-label="click to read how to play the game">
+                    Game Instructions
+                </button>
+                <!-- Modal box for game instructions -->
+                <div id="modal-box" class="info-modal-box">
+                    <div class="modal-box-content">
+                        <span class="close">&times;</span>
+                        <h2>How To Play!</h2>
+                        <h3>QUICK BEFORE THE MARIOS ESCAPE!</h3>
+                        <ul>
+                            <li>On desktop, use your mouse to hit the marios before they escape from the pipes!</li>
+                            <li>On mobile, tap the marios to hit them!</li>
+                            <li>You have 30 seconds to hit as many marios as you can and save the world</li>
+                            <li>Each time you get a successful hit of the mario, you will get one point!</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- start game button -->
-        <button id="start" type="button" aria-label="play the game">
-            <span id="startButtonText">Start Game</span>
-        </button>
-    </div>
+            </section>
+            <!-- start game button -->
+            <button id="start" type="button" aria-label="play the game">
+                <span id="startButtonText">Start Game</span>
+            </button>
+        </div>
 
-    <!-- Score and Timer section -->
-    <div class="game-info-container">
-        <h2 id="time-left">TIME LEFT: <span id="timer">0</span></h2>
-        <h2 id="time-up">TIME UP!!!!</h2>
-        <h2 id="score-board">SCORE: <span id="marios-hit">0</span></h2>
-    </div>
-    <!-- game container section -->
-    <div class="game-container">
-        <div class="hole hole1">
-            <div class="mario"></div>
+        <!-- Score and Timer section -->
+        <div class="game-info-container">
+            <h2 id="time-left">TIME LEFT: <span id="timer">0</span></h2>
+            <h2 id="time-up">TIME UP!!!!</h2>
+            <h2 id="score-board">SCORE: <span id="marios-hit">0</span></h2>
         </div>
-        <div class="hole hole2">
-            <div class="mario"></div>
+        <!-- game container section -->
+        <div class="game-container">
+            <div class="hole hole1">
+                <div class="mario"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="mario"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="mario"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="mario"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="mario"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="mario"></div>
+            </div>
         </div>
-        <div class="hole hole3">
-            <div class="mario"></div>
-        </div>
-        <div class="hole hole4">
-            <div class="mario"></div>
-        </div>
-        <div class="hole hole5">
-            <div class="mario"></div>
-        </div>
-        <div class="hole hole6">
-            <div class="mario"></div>
-        </div>
-    </div>
-</main>
-<!-- audio element for whack sound -->
-<audio id="whack-sound" src="assets/sounds/whack.mp3" preload="auto"></audio>
-<!-- script for game functionality -->
-<script src="assets/js/main.js"></script>
+    </main>
+    <!-- audio element for whack sound -->
+    <audio id="whack-sound" src="assets/sounds/whack.mp3" preload="auto"></audio>
+    <!-- script for game functionality -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
