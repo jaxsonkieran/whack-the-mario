@@ -8,7 +8,7 @@ const TIMEOUT_DURATION_MS = 20000; // 20 seconds
 const COUNTDOWN_INTERVAL_MS = 1000; // 1 second
 
 // dynamically changing variables
-let displayScore = document.getElementById('mariosHit');
+let displayScore = document.getElementById('marios-hit');
 let sameHole;
 let timeUp = false;
 let score = 0;

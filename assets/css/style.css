@@ -3,7 +3,6 @@ html {
   background: url('../images/mario-background.webp') no-repeat center center/cover;
   box-sizing: border-box;
   min-height: 100vh; /* Ensure minimum height of viewport */
-  font-size: 10px; /* Establish base font size for rem units */
 }
   /* Inherit box-sizing for all elements and pseudo-elements */
   *, *:before, *:after {
@@ -20,9 +19,9 @@ html {
   }
   /* Styles for main heading */
   h1 {
-    font-size: 10rem;
+    font-size: 8em;
     line-height: 1;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 0;
   }
 /* Container for game instructions */
@@ -35,8 +34,10 @@ html {
   .game-info-container button {
     background-color: #049cd8;
     color: #FBD000;
+    margin: 15px;
     border-radius: 8px;
     padding: 10px;
+    font-size: 0.6em;
   }
 /* Hover styles for buttons */
   .game-info-container button:hover {
@@ -51,14 +52,14 @@ html {
     padding: 20px;
     border: 2px solid #FBD000;
     border-radius: 8px;
-    width: 80%;
+    width: 60%;
   }
 
 /* Close button styles for modal box */  
 .close {
     color: #ff0000;
     float: right;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
   }
 
@@ -72,18 +73,18 @@ html {
 
 /* Styles for headings within modal box content */
   .modal-box-content h2 {
-    font-size: 4em;
+    font-size: 1.2em;
      margin: 0;
     }
     .modal-box-content h3 {
-    font-size: 2.5em;
+    font-size: 0.6em;
     }
 /* Styles for list items within modal box content */
 
   .modal-box-content li {
     text-align: left;
     padding: 5px;
-    font-size: 18px;
+    font-size: 0.5em;
   }
 /* Styles for the modal box, W3schools really helped with learning to build a modal */
 #modal-box {
@@ -92,7 +93,7 @@ html {
     position: fixed;
     /* sit on top of everything */
     z-index: 100;
-    padding-top:100px;
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -117,8 +118,12 @@ html {
     font-size: 2em;
   }
 
+  #time-left,
+  #score-board {
+    font-size: 1em;
+  }
 
-  #mariosHit,
+  #marios-hit,
   #timer {
     display: block;
   }
@@ -190,7 +195,7 @@ html {
   }
 
   .popup p {
-    font-size: 26px;
+    font-size: 2em;
     color: #049cd8;
   }
 
@@ -216,12 +221,11 @@ html {
     button {
       padding: 5px;
     }
-
     .modal-box-content h3 {
-      font-size: 1em;
+      font-size: 0.5em;
     }
     .modal-box-content li {
-      font-size: 0.8em;
+      font-size: 0.5em;
     }
     .game-info-container h2 {
       margin-top: 10px;
