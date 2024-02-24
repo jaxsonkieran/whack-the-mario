@@ -107,6 +107,7 @@ This project was built using HTML, CSS and Javascript.
 # Bugs
 * One of the more major bugs I encountered when making this project was trying to change the cursor to a hammer, or mallet when the user brought their mouse over the game container. I tried creating it in JS, CSS, etc. to no avail.
 * I had a lot of trouble with getting the mario to slide up and appear behind the pipe. I had to resort to cropping the bottom of the green pipe altogether and making it look like it was in the ground so it looked like the mario was jumping up out of it. I think it still looks ok in the end. 
+* Another bug that popped up while testing, I added a window.click event listener to the game over popup but it meant people were clicking out of it before they saw the final score because they were clicking so fast. It meant I just changed the size of the popup and moved the text to the center. 
 
 
 # Deployment
