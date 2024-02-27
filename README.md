@@ -2,23 +2,35 @@
 View the live site here
 
 # Table of Contents
-1. [UX](#ux)
+1. [Introduction](#introduction)
+2. [UX](#ux)
     * [Project Goals](#project-goals)
     * [User Goals](#user-goals)
     * [User Stories](#user-stories)
     * [Design](#design)
     * [Wireframes](#wireframes)
-2. [Technologies Used](#technologies-used)
-3. [Features](#features)
-4. [Features To Add](#features-to-add)
-5. [Testing](#testing)
-6. [Bugs](#bugs)
-7. [Validator Testing](#validator-testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+3. [Technologies Used](#technologies-used)
+4. [Features](#features)
+5. [Features To Add](#features-to-add)
+6. [Testing](#testing)
+7. [Bugs](#bugs)
+8. [Validator Testing](#validator-testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
     * [Content](#content)
     * [Media (Images)](#media)
     * [Acknowledgements](#acknowledgements)
+
+
+# Introduction
+[Visit the live site here]()
+Whack-A-Mole is an arcade game from the 1970's where a player used a mallet to hit the moles as they randomly popped out of holes, to score points. I used to play Super Mario as a kid, and have seen some abreviations of Whack-A-Mole with Whack-A-Mario so I thought this would be a super fun take on the old game!
+
+
+This game does not requre lots of reading to interact and play. This game inlcudes game instructions which are short and easy to follow. The game is contained in one page, so it is easily accessible and allows the target audience to interact immediately without having to follow the instructions or navigate away from varied pages to access their game play. 
+
+<img src="documentation/readme-images/WHACK-A-MARIO.webp">
+
 
 # UX
 ### Project Goals
