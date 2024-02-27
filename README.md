@@ -13,12 +13,12 @@ View the live site here
 4. [Features To Add](#features-to-add)
 5. [Testing](#testing)
 6. [Bugs](#bugs)
-7. [Deployment](#deployment)
-8. Credits
-    * Content
-    * Media (Images)
-    * Code
-    * Acknowledgements
+7. [Validator Testing](#validator-testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+    * [Content](#content)
+    * [Media (Images)](#media)
+    * [Acknowledgements](#acknowledgements)
 
 # UX
 ### Project Goals
@@ -76,12 +76,36 @@ Based on mario, so I've chosen a mario color pallete from [Pinterest](https://ww
 # Technologies Used
 This project was built using HTML, CSS and Javascript.
 
-* Google Fonts
+* [Google Fonts](https://fonts.google.com/)
     * Used to style the text
-* Gitpod 
+* [Gitpod](https://gitpod.io/) 
     * Gitpod was used by the developer to build the game.
-* GitHub
+
+* [GitHub](github.com/dashboard)
     * GitHub was used to store project code.
+
+* [Figma](https://www.figma.com/)
+    * Figma was used to create the wireframes
+
+* [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) 
+    * was used during the whole project, especially while debugging and making it responsive for different screen-sizes.
+
+* [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) 
+    * was used when testing the site performance.
+
+* [Am I Responsive](https://ui.dev/amiresponsive?url=https://jaxsonkieran.github.io/whack-the-mario/)
+    * was used to give the reader a quick and easy way to see the responsiveness of the site. 
+
+* [Favicons](https://favicon.io/) was used to add a favicon to the browser.
+ 
+* [W3C HTML Validator](https://validator.w3.org/) 
+    * was used to check for errors in the HTML code. 
+
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check for errors in the CSS code.
+
+* [JSHint Javascript Validator](https://jshint.com/) 
+    * was used to check for errors in the JavaScript code.
+
 
 
 # Features
@@ -122,9 +146,6 @@ This project was built using HTML, CSS and Javascript.
     * A favicon consistent with the theme of whack-a-mario was chosen to be associated with this website for extra visual support for the user.
 <img src="documentation/readme-images/favicon-capture.JPG">
 
-* 404 page
-
-
 # Features to Add
 * I would really like to add levels to this game, increase the difficulty and make it more difficult for the user as they progress.
 * It would also be cool to add a changing game container if the user passed a certain level, like if they hit over 20 marios, the game would change and they would need to hit moles, or pokemons, something to keep the user more engaged!
@@ -162,6 +183,8 @@ It returned no errors as shown below.
 * Lighthouse was used to check the site performance, accessibility, best practice and SEO. 
 <img src="documentation/readme-images/lighthouse-checker.JPG">
 
+* Responsiveness
+Pages were testing using the [amiresponsive](https://ui.dev/amiresponsive?url=https://jaxsonkieran.github.io/whack-the-mario/) website. Where it is possible to see the site on different screen sizes. 
 
 # Deployment
 This project was developed using [Gidpod](https://gitpod.io/), and pushed to [GitHub](https://github.com/).
@@ -188,3 +211,21 @@ To clone this project:
 6. Change the current directory to the location you want to clone this repo.
 7. Type **git clone** followed by the copied URL.
 8. Press Enter and your clone will be created.
+
+# Credits
+## Content
+* Some really helpful tutorials I used to help me with coding some of the design ideas for this project. I really benefitted from utilising the information from Code Institute and supplementing with Colt Steele Web Developer Course on Udemy, Javascript 30/30 challenges and Ania Kubow.
+    * [Javascript Whack-A-Mole](https://www.youtube.com/watch?v=toNFfAaWghU&feature=youtu.be)
+    * [Ania Kubow Whack-A-Mole](https://www.youtube.com/watch?v=rJU3tHLgb_c&feature=youtu.be)
+
+* Some other helpful resources that helped me learn to impliment specific features.
+    * W3Schools - [How to make a modal](https://www.w3schools.com/howto/howto_css_modals.asp)
+    * [CSS Tricks](https://css-tricks.com/)
+
+* Stack Overflow was also used for certain Javascript methods and iterating over objects, etc. Just to back up my code to make sure I was heading in the right direction.
+
+## Media
+* The images were chosen from [Pixabay](www.pixabay.com) 
+
+# Acknowledgements 
+* My peers on slack at the Code Institute have been extremely helpful with my project. The advice and support from Code Institute tutors were also super helpful in the early stages when I was running into issues with my GitPod, as this was my third iteration of the project. I had to restart a number of times. 
