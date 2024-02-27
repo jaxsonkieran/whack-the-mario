@@ -10,9 +10,11 @@ View the live site here
     * [Wireframes](#wireframes)
 2. [Technologies Used](#technologies-used)
 3. [Features](#features)
-4. Testing
-5. Deployment
-6. Credits
+4. [Features To Add](#features-to-add)
+5. [Testing](#testing)
+6. [Bugs](#bugs)
+7. [Deployment](#deployment)
+8. Credits
     * Content
     * Media (Images)
     * Code
@@ -28,9 +30,11 @@ Whack-a-Mario is a game designed to give the user a fun, intuitive and interesti
 
 ### User Stories
 #### As a first time visitor I want to quickly understand where to find the rules
+* The user can easily see the button 'Game Instructions'
+* When hovering the button changes background-color to indicate the user can click on it.
 #### As a first time visitor I want to know where to start the game
-* As soon as teh page is loaded the user can easily see the button 'Start Game'
-* When hovering above the button it changes background-color to indicate the user can click on it
+* As soon as the page is loaded the user can easily see the button 'Start Game'
+* When hovering above the button changes background-color to indicate the user can click on it
 #### As a first time visitor I want to see what my score is and how much time I have left
 * Above the game container the user can see their score and the time they have left.
 * The information is updated in real time so the user always sees how they are doing, with score and time left
@@ -62,7 +66,12 @@ Based on mario, so I've chosen a mario color pallete from [Pinterest](https://ww
 
 
 #### Wireframes
+* To create the general idea of the site [Figma](https://www.figma.com/files/recents-and-sharing?fuid=1312036834940135231) was used to create the wireframes. I had a pretty good idea of the colours, and how I wanted the game to look prior to even starting the project. 
+* Desktop View
+<img src="documentation/readme-images/desktopwire.JPG">
 
+* Mobile View
+<img src="documentation/readme-images/mobilewireframe.JPG">
 
 # Technologies Used
 This project was built using HTML, CSS and Javascript.
