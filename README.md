@@ -23,7 +23,7 @@ View the live site here
 
 
 # Introduction
-[Visit the live site here]()
+[Visit the live site here](https://jaxsonkieran.github.io/whack-the-mario/)
 Whack-A-Mole is an arcade game from the 1970's where a player used a mallet to hit the moles as they randomly popped out of holes, to score points. I used to play Super Mario as a kid, and have seen some abreviations of Whack-A-Mole with Whack-A-Mario so I thought this would be a super fun take on the old game!
 
 
